@@ -1,0 +1,16 @@
+.main_content_div {
+    padding: 16px;
+
+    ion-input {
+        border: 1px solid lightgray;
+        --padding-start: 16px;
+        --padding-left: 16px;
+        border-radius: 3px;
+    }
+
+    ion-button {
+        --border-radius: 3px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+}

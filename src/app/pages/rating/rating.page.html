@@ -1,0 +1,35 @@
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="head_div">
+            <!-- <img src="assets/imgs/back2.png" class="back_img"> -->
+            <ion-buttons slot="start" class="back_img">
+                <ion-menu-button color="light"></ion-menu-button>
+            </ion-buttons>
+            <ion-label class="head_lbl">Rating</ion-label>
+        </div>
+
+        <div class="white_div">
+            <div class="user_image" [style.backgroundImage]="'url(assets/imgs/user.jpg)'"></div>
+            <div class="content_div">
+                <ion-label class="username">Gregory Smith</ion-label>
+                <ion-label class="small_lbl">652-UKW</ion-label>
+                <ion-label class="bold_lbl">How is your trip ?</ion-label>
+                <ion-label class="small_lbl" style="margin-top: 20px;">Your Feedback will help improve<br> driving Experience</ion-label>
+              
+                <ion-rating 
+                    [rate]="rate"
+                    [(ngModel)] = "rate"
+                    readonly="false"
+                    size="small"
+                    (rateChange)="onRateChange($event)">
+                </ion-rating>
+
+                <ion-textarea class="text_area" rows="5"></ion-textarea>
+
+                <ion-button expand="block">Submit Review</ion-button>
+            </div>
+        </div>
+
+    </div>
+</ion-content>

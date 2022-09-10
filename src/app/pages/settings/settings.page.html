@@ -1,0 +1,70 @@
+<ion-content>
+    <div class="main_content_div">
+        
+        <div class="upper_div">
+            <ion-buttons slot="start">
+                <ion-menu-button  color="light"></ion-menu-button>
+            </ion-buttons>
+            <div class="flex_div">
+                <ion-label class="head_lbl">Settings</ion-label>
+            </div>
+        </div>
+
+        <div class="lower_div">
+            <div class="list_div">
+                <div class="first_div">
+                    <div class="inner_div">
+                        <div class="profile_pic" [style.backgroundImage]="'url(assets/imgs/user.jpg)'"></div>
+                    </div>
+                    <div style="margin-left: 10px;"> 
+                        <ion-label class="username">Larry Devis</ion-label>
+                        <ion-label class="small_lbl">Gold Member</ion-label>
+                    </div>
+                </div>
+                <div class="second_div">
+                    <img src="assets/imgs/next_gray.png" class="nxt_img">
+                </div>
+            </div>
+
+            <div class="last_div">
+                <ion-item detail>
+                    <ion-label>
+                      Notification
+                    </ion-label>
+                </ion-item>
+                <ion-item detail>
+                    <ion-label>
+                      Security
+                    </ion-label>
+                </ion-item>
+                <ion-item detail>
+                    <ion-label>
+                      Language
+                    </ion-label>
+                </ion-item>
+            </div>
+
+            <div class="last_div">
+                <ion-item detail>
+                    <ion-label>
+                      Clear Cache
+                    </ion-label>
+                </ion-item>
+                <ion-item detail>
+                    <ion-label>
+                      Terms & Privacy Policy
+                    </ion-label>
+                </ion-item>
+                <ion-item detail>
+                    <ion-label>
+                      Contact Us
+                    </ion-label>
+                </ion-item>
+            </div>
+
+            <ion-label class="log_class">Log out</ion-label>
+
+        </div>
+
+    </div>
+</ion-content>

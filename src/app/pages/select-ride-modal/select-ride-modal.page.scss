@@ -1,0 +1,42 @@
+ion-content{
+    --padding-top: 20px;
+
+    ion-label {
+        display: block;
+    }
+
+    .upper_div{
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+        .first_div{
+            display: flex;
+            align-items: center;
+            img{
+                width: 50px;
+            }
+            .lbls{
+                padding-left: 10px;
+
+                .bold_lbl{
+                    font-weight: 600;
+                }
+                .light_lbl{
+                    color: gray;
+                }
+            }
+        }
+        .second_div{
+            .light_lbl{
+                color: gray;
+            }
+            .red_lbl{
+                color: red;
+                font-size: 18px;
+                font-weight:600;
+            }
+        }
+    }
+}

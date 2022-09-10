@@ -1,0 +1,47 @@
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="upper_div">
+            <ion-buttons slot="start">
+              <ion-menu-button  color="light"></ion-menu-button>
+            </ion-buttons>
+            <!-- <img src="assets/imgs/back2.png" (click)="goBack()" class="back_img"> -->
+
+            <div class="flex_div">
+                <ion-label class="head_lbl">My Wallet</ion-label>
+                <div style="display: flex; background-color: #49D9A6; border-radius: 25px;padding : 10px 15px;">
+                    <img src="assets/imgs/star.png" class="star_img">
+                    <ion-label class="prize"> 2500</ion-label>
+                </div>
+            </div>    
+        </div>
+
+        <div class="lower_div">
+
+            <div class="balance_card">
+                <ion-label class="money_lbl">Available Balance: <span>2500</span> </ion-label>
+                <ion-label class="add_lbl" (click)="goToPayment()">Add Money</ion-label>
+            </div>
+
+            <ion-input type="number" placeholder="Enter Amount"></ion-input>
+
+            <div class="btn_div">
+                <ion-button fill="outline" shape="round" size="small">
+                  + 1000
+                </ion-button>
+                <ion-button fill="outline" shape="round" size="small">
+                  + 3000
+                </ion-button>
+                <ion-button fill="outline" shape="round" size="small">
+                  + 5000
+                </ion-button>
+            </div>
+
+            <ion-button class="last_btn" expand="block" (click)="goToPayment()">
+                Add Money
+            </ion-button>
+
+        </div>
+
+    </div>
+</ion-content>

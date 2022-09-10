@@ -1,0 +1,59 @@
+.main_content_div{
+    width: 100%;
+    background: white;
+
+    .upper_div{
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(to top, var(--ion-color-main), rgba(112, 233, 192, 0.6));
+        position: relative;
+
+        .taxi_img{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    .lower_div{
+        padding: 20px;
+        .head_lbl{
+            display: block;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .small_lbl{
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            color: lightgray;
+        }
+        .loc_btn{
+            margin-top: 30px;
+            --border-color : var(--ion-color-main);
+            --color : var(--ion-color-main);
+            --border-radius : 5px;
+            --border-width: 2px;
+        }
+        .send_icn{
+            width: 17px;
+            margin-right: 10px;
+        }
+        .red_lbl_div{
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+
+            .red_lbl{
+                // margin-top: 20px;
+                text-align: center;
+                color: red;
+                border-bottom: 1px solid red;;
+            }
+        }
+    }
+}

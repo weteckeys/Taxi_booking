@@ -1,0 +1,62 @@
+<ion-content>
+    <div class="main_content_div">
+        <div class="upper_div">
+
+            <div class="menu_div">
+                <ion-buttons slot="start">
+                  <ion-menu-button color="light"></ion-menu-button>
+                </ion-buttons>
+                <ion-button color="light" fill="clear">
+                  Done
+                </ion-button>
+            </div>
+
+            <div class="flex_div">
+                <ion-label class="head_lbl">Payment Method</ion-label>
+            </div>
+
+        </div>
+
+        <div class="lower_div">
+
+            <div class="up_div">
+                <div class="flex_div">
+                    <div class="image_div">
+                        <img src="assets/imgs/label.png" class="radio_img">
+                    </div>
+                    <div class="display:flex;flex-direction: column;">
+                        <ion-label style="font-weight: 500;display: block;margin-left: 10px !important">Cash</ion-label>
+                        <ion-label style="color: lightgray; display: block;margin-left: 10px !important">Default Payment Method
+                        </ion-label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="up_div">
+                <ion-label class="main_lbl">Payment Methods</ion-label>
+                <div class="flex_div2" (click)="chooseMethod(1)">
+                    <img src="assets/imgs/visa.png" class="icn">
+                    <ion-label>**** **** **** 4242</ion-label>
+                    <img src="assets/imgs/correct.png" *ngIf="method == 1" class="verify_icn">
+                </div>
+                <div class="flex_div2" (click)="chooseMethod(2)">
+                    <img src="assets/imgs/paypal.png" class="icn">
+                    <ion-label>example.mail.com</ion-label>
+                    <img src="assets/imgs/correct.png" *ngIf="method == 2" class="verify_icn">
+                </div>
+                <div class="flex_div2" (click)="chooseMethod(3)">
+                    <img src="assets/imgs/mastercard.png" class="icn">
+                    <ion-label>**** **** **** 4242</ion-label>
+                    <img src="assets/imgs/correct.png" *ngIf="method == 3" class="verify_icn">
+                </div>
+            </div>
+
+            <div class="btn_div">
+                <ion-button expand="block" (click)="goToAddCard()">
+                    <ion-icon name="add-circle"></ion-icon> &nbsp;&nbsp; Add New Method
+                </ion-button>
+            </div>
+
+        </div>
+    </div>
+</ion-content>

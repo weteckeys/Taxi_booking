@@ -1,0 +1,32 @@
+<ion-content>
+    <div class="main_content_div">
+        <div class="head_div">
+            <!-- <img src="assets/imgs/back2.png" class="back_img"> -->
+            <ion-buttons slot="start" class="back_img">
+                <ion-menu-button color="light"></ion-menu-button>
+            </ion-buttons>
+            <ion-label class="head_lbl">Tips</ion-label>
+        </div>
+
+        <div class="white_div">
+            <div class="user_image" [style.backgroundImage]="'url(assets/imgs/user.jpg)'"></div>
+            <div class="content_div">
+                <ion-label class="username">Gregory Smith</ion-label>
+                <ion-label class="small_lbl">652-UKW</ion-label>
+                <ion-label class="bold_lbl">Wow! A 5 Star !</ion-label>
+                <ion-label class="bold_lbl" style="margin-top: 5px;">Wanna add trip for Gregory</ion-label>
+
+                <div class="price_div">
+                    <div class="inner_div" [class.active]="price == 1" (click)="priceClick(1)">$1</div>
+                    <div class="inner_div" [class.active]="price == 2" (click)="priceClick(2)">$2</div>
+                    <div class="inner_div" [class.active]="price == 3" (click)="priceClick(3)">$5</div>
+                </div>
+
+                <div style="text-align: center;margin-top: 30px;"><span class="red_lbl" (click)="chooseAmount()"  >Choose anothor amount</span></div>
+
+                <ion-button expand="block">Done</ion-button>
+                <ion-label class="small_lbl" style="margin-top: 20px;">Maybe next time</ion-label>
+            </div>
+        </div>
+    </div>
+</ion-content>

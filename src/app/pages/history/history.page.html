@@ -1,0 +1,45 @@
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="upper_div">
+            <ion-buttons slot="start">
+                <ion-menu-button  color="light"></ion-menu-button>
+            </ion-buttons>
+            <!-- <img src="assets/imgs/back2.png" (click)="goBack()" class="back_img"> -->
+
+            <div class="flex_div">
+                <ion-label class="head_lbl">History</ion-label>
+                <ion-datetime displayFormat="MMM, DD YYYY" value="2020-02-20"></ion-datetime>
+            </div>
+        </div>
+
+        <div class="lower_div">
+            <div class="card_div" *ngFor="let i of [1,2,3]">
+                <div class="up_div">
+                    <div style="display: flex;">
+                        <img src="assets/imgs/radio.png" class="radio_img">
+                        <ion-label class="loc_lbl">765, Swift Village</ion-label>
+                    </div>
+                    <div>
+                        <img src="assets/imgs/lines.png" class="line_img">
+                    </div>
+                    <div style="display: flex;">
+                        <img src="assets/imgs/pin.png" class="radio_img">
+                        <ion-label class="loc_lbl">134 Williamst, Choicago, US</ion-label>
+                    </div>
+                </div>
+
+                <div class="low_div">
+                    <div class="f_div" style="display: flex;">
+                        <img src="assets/imgs/dollar.png" class="radio_img">
+                        <ion-label class="loc_lbl" style="font-weight: 500">$35.00</ion-label>
+                    </div>
+                    <div class="s_div" style="display: flex;">
+                        <ion-label>Completed <img src="assets/imgs/next.png" class="radio_img2"></ion-label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</ion-content>

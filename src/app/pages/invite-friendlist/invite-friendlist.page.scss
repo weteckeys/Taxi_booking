@@ -1,0 +1,71 @@
+.main_content_div{
+    width: 100%;
+
+    .upper_div{
+        height: 150px;
+        background: var(--ion-color-main);
+        padding: 20px;
+
+        .head_div{
+            display: flex;
+            justify-content: center;
+            .back_img{
+                width: 20px;
+                position: absolute;
+                left: 20px;
+            }
+            .head_lbl{
+                color: white;
+                font-weight: 500;
+                font-size: 18px;
+            }
+        }
+        .search_bar{
+            margin-top: 20px;
+            --background : #78EBC4;
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    .lower_div{
+        // padding: 20px;
+        .list_div{
+            display: flex;
+            flex-direction: row;
+            width: 100;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid lightgray;
+            padding: 20px;
+            .first_div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .profile_pic{
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .username{
+                    margin-left: 10px;
+                    font-weight: 500;
+                }
+            }
+            .second_div{
+                ion-button{
+                    --border-radius: 25px;
+                    height: 35px;
+                    width: 55px;
+                }
+                .gray_btn{
+                    --background: #E2E1E7;
+                }
+            }
+        }
+    }
+}

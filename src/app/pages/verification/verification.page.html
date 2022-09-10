@@ -1,0 +1,16 @@
+<ion-content>
+    <div class="main_content_div">
+        <div class="upper_div">
+            <img src="assets/imgs/back2.png" (click)="goBack()" class="back_img">
+            <ion-label class="head_lbl">Phone Verification</ion-label>
+            <ion-label class="small_lbl">Enter Your OTP Code</ion-label>
+        </div>
+
+        <div class="lower_div">
+            <ng-otp-input  (onInputChange)="onOtpChange($event)" [config]="config"></ng-otp-input>
+            <ion-button (click)="goToHome()" expand="block">
+                Verify Now
+            </ion-button>
+        </div>
+    </div>
+</ion-content>

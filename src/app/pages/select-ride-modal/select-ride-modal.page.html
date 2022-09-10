@@ -1,0 +1,17 @@
+<ion-content>
+    <div class="upper_div" *ngFor="let item of ride" (click)="selectRide()">  
+        <div class="first_div">
+            <div>
+                <img src="{{item.car}}">
+            </div>
+            <div class="lbls">
+                <ion-label class="bold_lbl">{{item.name}}</ion-label>
+                <ion-label class="light_lbl">{{item.km}}</ion-label>
+            </div>
+        </div>
+        <div class="second_div">
+            <ion-label class="red_lbl">{{item.price}}</ion-label>
+            <ion-label class="light_lbl">{{item.time}}</ion-label>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Promo Code</ion-title>
+        <ion-button (click)="close()" fill="clear" slot="end">
+            <ion-icon slot="icon-only" name="close" style="color: gray;"></ion-icon>
+        </ion-button>
+    </ion-toolbar>
+</ion-header> 
+
+<ion-content>
+    <div class="main_content_div">
+        <ion-input type="text" placeholder="Input promo code">
+            <img src="assets/imgs/coupon.png">
+        </ion-input>
+
+        <ion-button (click)="presentAlertConfirm()" expand="block">
+            Apply
+        </ion-button>
+    </div>
+</ion-content>

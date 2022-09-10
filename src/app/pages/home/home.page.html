@@ -1,0 +1,58 @@
+<ion-content>
+    <div class="main_content_div" [style.height]="height+'px'">
+        <div class="menu_flex">
+            <div class="menu_box">
+                <ion-buttons slot="start">
+                    <ion-menu-button color="dark"></ion-menu-button>
+                </ion-buttons>
+            </div>
+        </div>
+
+        <div #map id="map" class="map" [style.height]="(height-270)+'px'"></div>
+
+        <div class="div1" id='item' style="height: 300px;">
+            <ion-label class="small_lbl">PICKUP</ion-label>
+            <div class="flex_div">
+                <img src="assets/imgs/radio.png" class="radio_img">
+                <!-- <ion-label class="loc_lbl">134 Williamst, Choicago, US</ion-label> -->
+                <ion-searchbar style="padding: 0px; margin-left :10px" placeholder="Pickup" (ionFocus)="onClick()"
+                    (ionBlur)="onClick2()" (ionInput)="onSearchChange1($event)" autocomplete="on"
+                    showCancelButton="never" mode="ios" [(ngModel)]="autocomplete1.query">
+                </ion-searchbar>
+            </div>
+
+            <ion-list>
+                <ion-item *ngFor="let item of autocompleteItems1" (click)="selectSearchResult1(item)">
+                    {{ item }}
+                </ion-item>
+            </ion-list>
+
+            <div class="flex_div" style="align-items: center;">
+                <img src="assets/imgs/lines.png" class="line_img">
+                <div class="gray_line"></div>
+            </div>
+
+            <ion-label class="small_lbl">DROP OFF</ion-label>
+            <div style="display: flex;margin-top: 0px; align-items: center;">
+                <img src="assets/imgs/pin.png" class="radio_img">
+
+                <ion-searchbar style="padding: 0px; margin-left :10px" placeholder="Drop" (ionFocus)="onClick()"
+                    (ionBlur)="onClick2()" (ionInput)="onSearchChange2($event)" autocomplete="on"
+                    showCancelButton="never" mode="ios" [(ngModel)]="autocomplete2.query">
+                </ion-searchbar>
+            </div>
+
+            <ion-list>
+                <ion-item *ngFor="let item of autocompleteItems2" (click)="selectSearchResult2(item)">
+                    {{ item }}
+                </ion-item>
+            </ion-list>
+
+            <ion-button (click)="goToRequestRide()" expand="block">
+                Apply
+            </ion-button>
+
+        </div>
+
+    </div>
+</ion-content>

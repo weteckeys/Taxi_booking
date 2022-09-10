@@ -1,0 +1,128 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+
+@font-face {
+    font-family: 'proxima';
+    src: url(assets/fonts/OpenSans-Regular.ttf);
+} 
+
+*{
+    font-family: 'proxima';
+}
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.swiper-pagination-bullet {
+    width: 25px !important;
+    height: 5px !important;
+    display: inline-block !important;
+    border-radius: 50px !important;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0px;
+}
+
+ion-modal.custom_modal {
+    .modal-wrapper{
+        width: 100% !important;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    &.bottom {
+        align-items: flex-end !important;
+    }
+
+    --height: 30vh;
+}
+
+.sc-ion-modal-ios-h{
+    align-items: flex-end;
+}
+.sc-ion-modal-md-h{
+    align-items: flex-end;
+}
+
+ion-modal.custom_modal2 {
+    .modal-wrapper{
+        width: 100% !important;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    &.bottom {
+        align-items: flex-end !important;
+    }
+
+    --height: 70vh;
+}
+
+ion-modal.promoModal {
+    .modal-wrapper{
+        width: 100% !important;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    &.bottom {
+        align-items: flex-end !important;
+    }
+
+    --height: 35vh;
+}
+
+.sc-ion-modal-ios-h{
+    align-items: flex-end;
+}
+.sc-ion-modal-md-h{
+    align-items: flex-end;
+}
+
+.event-detail-container {
+    display: none;
+}
+
+.table-bordered, th, tr, td {
+    border: 0px !important;
+}
+.monthview-selected {
+    background: var(--ion-color-primary) !important;
+}
+
+ion-button{
+    letter-spacing: 1px;
+}
+
+ion-modal.custom-modal{
+    .modal-wrapper{
+        width: 100% !important;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    &.bottom {
+        align-items: flex-end !important;
+    }
+
+    --height: 230px;
+    align-items: flex-end;
+}

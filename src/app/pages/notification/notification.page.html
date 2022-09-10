@@ -1,0 +1,29 @@
+<ion-content>
+    <div class="main_content_div">
+
+        <div class="upper_div">
+            <ion-buttons slot="start">
+                <ion-menu-button  color="light"></ion-menu-button>
+            </ion-buttons>
+
+            <div class="flex_div">
+                <ion-label class="head_lbl">Notification</ion-label>
+                <ion-icon name="trash-outline" class="trash_icn" color="light"></ion-icon>
+            </div>          
+        </div>
+
+        <div class="lower_div">
+            <div class="list_div" *ngFor="let item of [1,2,3,4,5,6]">
+                <div class="icn_div">
+                    <ion-icon class="icn" name="checkmark-circle"></ion-icon> 
+                </div>
+                <div class="detail_div">
+                    <ion-label class="title_lbl">System</ion-label>
+                    <ion-label class="desc_lbl">Your Booking #1234 hac been sucessfully..</ion-label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</ion-content>
+ 
